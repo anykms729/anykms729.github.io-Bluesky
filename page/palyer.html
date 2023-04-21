@@ -15,16 +15,16 @@
 
   <style type="text/css">
     body {
-      margin-top: 20px;
+      margin-top: 5px;
       background: rgb(188, 220, 244);
       color: rgb(4, 28, 60);
       font-family: 'Oswald', sans-serif;
+      text-decoration: none;
     }
 
     #wrap {
       margin: 0 auto;
       text-align: center;
-      text-transform: uppercase;
       padding-bottom: 20px;
     }
 
@@ -34,7 +34,6 @@
       font-size: 60px;
       color: #fff;
       text-align: center;
-      text-transform: uppercase;
     }
 
     #nav {
@@ -43,19 +42,34 @@
       margin-bottom: 20px;
       font-size: 30px;
       border-bottom: 3px solid navy;
-      color: #fff;
+      color: gray;
       text-align: center;
-      text-transform: uppercase;
       white-space: nowrap;
     }
 
-    .menu {
+    .menu_player,
+    .menu_field {
+      color: #fff;
       display: inline;
       margin-right: 20px;
     }
 
+    .menu_player a{
+      text-decoration: none;
+      color: midnightblue;
+    }
+
+    .menu_player:hover,
+    .menu_field:hover {
+      cursor: pointer;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
     a {
       text-decoration: none;
+      color:#fff;
     }
 
     .team_title {
@@ -65,8 +79,6 @@
       text-transform: capitalize;
       font-weight: 600;
     }
-
-    .our-team {}
 
     @media only screen and (max-width:768px) {
       .our-team {
@@ -98,6 +110,10 @@
 
     .single-team p {
       margin-bottom: 0px;
+    }
+
+    .single-team :hover {
+      color:rgb(4, 28, 60);
     }
 
     .our-team .social {
@@ -247,7 +263,7 @@
       text-align: center;
       font-weight: 600;
       position: relative;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
       text-transform: uppercase;
       font-size: 30px;
     }
@@ -267,8 +283,8 @@
   <div id="wrap">
     <div id="header">SKY BLUE</div>
     <div id="nav">
-      <span class="menu">PLAYER ANALYSIS</span>
-      <span class="menu">FIELD ANAYLSIS</span>
+      <span class="menu_player"><a href=palyer.html>Player Analysis</a></span>
+      <span class="menu_field"><a href=field.html>Field Analysis</a></span>
     </div>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <div class="container">
@@ -281,8 +297,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/FILIPPA_ANGELDAHL.jpeg" class="img-fluid" alt>
-              <h3>FILIPPA</h3>
-              <h3>ANGELDAHL</h3>
+              <h3>FILIPPA<br/>ANGELDAHL</h3>
               <p>Number 12</p>
             </div>
             <ul class="social">
@@ -301,8 +316,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/JULIE_BLAKSTAD.jpeg" class="img-fluid" alt>
-              <h3>JULIE</h3>
-              <h3>BLAKSTAD</h3>
+              <h3>JULIE<br/>BLAKSTAD</h3>
               <p>Number 41</p>
             </div>
             <ul class="social">
@@ -320,8 +334,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/LAURA_COOMBS.jpeg" class="img-fluid" alt>
-              <h3>LAURA</h3>
-              <h3>COOMBS</h3>
+              <h3>LAURA<br/>COOMBS</h3>
               <p>Number 7</p>
             </div>
             <ul class="social">
@@ -338,8 +351,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/YUI_HASEGAWA.jpeg" class="img-fluid" alt>
-              <h3>YUI</h3>
-              <h3>HASEGAWA</h3>
+              <h3>YUI<br/>HASEGAWA</h3>
               <p>Number 25</p>
             </div>
             <ul class="social">
