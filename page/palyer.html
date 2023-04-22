@@ -297,15 +297,12 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/FILIPPA_ANGELDAHL.jpeg" class="img-fluid" alt>
-              <h3>FILIPPA<br/>ANGELDAHL</h3>
+              <a href = "javascript:popup()" target = "_blank"><h3 class="clickable">FILIPPA<br/>ANGELDAHL</h3></a>
               <p>Number 12</p>
             </div>
             <ul class="social">
               <label for="disk_d">Status</label>
               <meter id="disk_d" value="0.6">60%</meter>
-              <!-- <li><a href="#" class="fa fa-facebook facebook"></a></li>
-              <li><a href="#" class="fa fa-twitter twitter"></a></li>
-              <li><a href="#" class="fa fa-google google"></a></li> -->
             </ul>
           </div>
         </div>
@@ -316,7 +313,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/JULIE_BLAKSTAD.jpeg" class="img-fluid" alt>
-              <h3>JULIE<br/>BLAKSTAD</h3>
+              <h3 class="clickable">JULIE<br/>BLAKSTAD</h3>
               <p>Number 41</p>
             </div>
             <ul class="social">
@@ -334,7 +331,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/LAURA_COOMBS.jpeg" class="img-fluid" alt>
-              <h3>LAURA<br/>COOMBS</h3>
+              <h3 class="clickable">LAURA<br/>COOMBS</h3>
               <p>Number 7</p>
             </div>
             <ul class="social">
@@ -351,7 +348,7 @@
           <div class="our-team">
             <div class="single-team">
               <img src="../pic/YUI_HASEGAWA.jpeg" class="img-fluid" alt>
-              <h3>YUI<br/>HASEGAWA</h3>
+              <h3 class="clickable">YUI<br/>HASEGAWA</h3>
               <p>Number 25</p>
             </div>
             <ul class="social">
@@ -363,13 +360,30 @@
       </div>
     </div>
   </div>
+
   
 
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript">
+  <script>
+    var new_window_width = 400;
+    var new_window_height = 300;
+    var positionX = (window.screen.width / 2) - (new_window_width / 2);
+    var positionY = (window.screen.height / 2) - (new_window_height / 2);
 
-  </script>
+    function popup() {
+    var new_window = window.open(
+        "../pic/FILIPPA_ANGELDAHL.jpeg", 
+        "popup",
+        "width=" + new_window_width + ",height=" + new_window_height + ",top=" + positionY + ",left=" + positionX
+    );
+
+    // Set the size of the new window
+    new_window.resizeTo(new_window_width, new_window_height);
+    // Move the new window to the desired position
+    new_window.moveTo(positionX, positionY);
+}
+</script>
 </body>
 
 </html>
