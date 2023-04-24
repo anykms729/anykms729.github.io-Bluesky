@@ -10,6 +10,7 @@
 
 ## Live Demo
 > Github Page (https://anykms729.github.io/anykms729.github.io-Bluesky/)
+* To proceed to the next page from the home page, simply upload any file and press the 'Upload' button.
 
 ## PPT File 
 > https://www.canva.com/design/DAFgjkVa0PQ/vH-o-W18Xwjxgs7MuHdl2A/edit?utm_content=DAFgjkVa0PQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
